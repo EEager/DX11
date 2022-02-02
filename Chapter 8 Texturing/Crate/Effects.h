@@ -41,6 +41,11 @@ public:
 	void SetDirLights(const DirectionalLight* lights)   { DirLights->SetRawValue(lights, 0, 3*sizeof(DirectionalLight)); }
 	void SetMaterial(const Material& mat)               { Mat->SetRawValue(&mat, 0, sizeof(Material)); }
 	void SetDiffuseMap(ID3D11ShaderResourceView* tex)   { DiffuseMap->SetResource(tex); }
+	void SetDiffuseMapArray(ID3D11ShaderResourceView** texArray, uint32_t offset, uint32_t count)
+	{ 
+		DiffuseMap->SetResourceArray(texArray, offset, count);
+	}
+
 
 	ID3DX11EffectTechnique* Light1Tech;
 	ID3DX11EffectTechnique* Light2Tech;
