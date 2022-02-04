@@ -12,7 +12,34 @@
 #ifndef _XNA_COLLISION_H_
 #define _XNA_COLLISION_H_
 
-#include <xnamath.h>
+#include <DirectXMath.h>
+#include <DirectXPackedVector.h>
+
+using namespace DirectX;
+using namespace DirectX::PackedVector;
+
+
+// ----------------------------------------------------------------------------------------
+// Matrix type: Sixteen 32 bit floating point components aligned on a
+// 16 byte boundary and mapped to four hardware vector registers
+#if !defined(XM_NO_ALIGNMENT)
+#define _DECLSPEC_ALIGN_16_   __declspec(align(16))
+#else
+#define _DECLSPEC_ALIGN_16_
+#endif
+
+// JJLEE : V1, V2 
+inline XMVECTOR XMVectorPermute_JJLEE(FXMVECTOR V1, FXMVECTOR V2, XMVECTORI32 Permute)
+{
+    return XMVectorPermute(V1, V2,
+        Permute.i[0],
+        Permute.i[1],
+        Permute.i[2],
+        Permute.i[3]);
+}
+
+
+// -------------------------------------------------------------------------------------------
 
 namespace XNA
 {
