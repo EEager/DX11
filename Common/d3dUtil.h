@@ -12,6 +12,9 @@
 
 
 
+// JJLEE : P operation 때매 추가함.
+#define _XM_NO_INTRINSICS_
+
  
 #include "d3dx11Effect.h"
 #include "DDSTextureLoader.h"
