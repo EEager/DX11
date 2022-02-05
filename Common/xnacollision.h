@@ -28,7 +28,7 @@ using namespace DirectX::PackedVector;
 #define _DECLSPEC_ALIGN_16_
 #endif
 
-// JJLEE : V1, V2 
+// JJLEE : V1, V2   
 inline XMVECTOR XMVectorPermute_JJLEE(FXMVECTOR V1, FXMVECTOR V2, XMVECTORI32 Permute)
 {
     return XMVectorPermute(V1, V2,
