@@ -24,6 +24,12 @@
     <None Include="FX\LightHelper.fx">
       <Filter>FX</Filter>
     </None>
+    <None Include="..\..\Common\DirectXTex.inl">
+      <Filter>Common</Filter>
+    </None>
+    <None Include="..\..\Common\DirectXTex.lib(64)">
+      <Filter>Common</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DynamicCubeMapDemo.cpp">
@@ -38,6 +44,9 @@
     <ClCompile Include="Vertex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Sky.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Common\Camera.cpp">
       <Filter>Common</Filter>
     </ClCompile>
@@ -45,6 +54,12 @@
       <Filter>Common</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Common\d3dUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\DDSTextureLoader.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\dxerr.cpp">
       <Filter>Common</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Common\GameTimer.cpp">
@@ -59,11 +74,14 @@
     <ClCompile Include="..\..\Common\MathHelper.cpp">
       <Filter>Common</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Common\TextureMgr.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Common\Waves.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="Sky.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\..\Common\xnacollision.cpp">
+      <Filter>Common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -74,6 +92,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Vertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sky.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Common\Camera.h">
@@ -88,6 +109,15 @@
     <ClInclude Include="..\..\Common\d3dx11effect.h">
       <Filter>Common</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Common\DDSTextureLoader.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\DirectXTex.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\dxerr.h">
+      <Filter>Common</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Common\GameTimer.h">
       <Filter>Common</Filter>
     </ClInclude>
@@ -100,11 +130,14 @@
     <ClInclude Include="..\..\Common\MathHelper.h">
       <Filter>Common</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Common\TextureMgr.h">
+      <Filter>Common</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Common\Waves.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="Sky.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\..\Common\xnacollision.h">
+      <Filter>Common</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -114,5 +147,16 @@
     <CustomBuild Include="FX\Basic.fx">
       <Filter>FX</Filter>
     </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\Common\DirectXTex.lib">
+      <Filter>Common</Filter>
+    </Library>
+    <Library Include="..\..\Common\Effects11.lib">
+      <Filter>Common</Filter>
+    </Library>
+    <Library Include="..\..\Common\Effects11d.lib">
+      <Filter>Common</Filter>
+    </Library>
   </ItemGroup>
 </Project>
