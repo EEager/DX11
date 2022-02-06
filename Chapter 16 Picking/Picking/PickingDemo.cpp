@@ -147,7 +147,7 @@ bool PickingApp::Init()
 	return true;
 }
 
-void PickingApp::OnResize()
+void PickingApp::OnResize()  
 {
 	D3DApp::OnResize();
 
@@ -243,9 +243,6 @@ void PickingApp::DrawScene()
 			md3dImmediateContext->OMSetDepthStencilState(0, 0);
 		}
 	}
-
-	
-
 
 	HR(mSwapChain->Present(0, 0));
 }
